@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Math_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="High Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGM-ks-tdE">
+                                <rect key="frame" x="100.5" y="64" width="213.5" height="62.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyX-ni-Bcj">
+                                <rect key="frame" x="152" y="146.5" width="110" height="62.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="E8i-5j-XsV">
+                                <rect key="frame" x="0.0" y="244" width="414" height="6"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="2Ob-Ls-AR9"/>
+                                </constraints>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="F49-9i-0Ye">
+                                <rect key="frame" x="106" y="591" width="202" height="251"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 x 8 =" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="Efd-HM-3WN">
+                                        <rect key="frame" x="0.0" y="0.0" width="202" height="57"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="wAi-vd-QRC">
+                                        <rect key="frame" x="0.0" y="86" width="202" height="68"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrG-j8-EuS">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="68"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="12"/>
+                                                <state key="normal" title="56" backgroundImage="Answer Button"/>
+                                                <connections>
+                                                    <action selector="button1Touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wcd-vQ-Vjy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46C-Rh-Csm">
+                                                <rect key="frame" x="126" y="0.0" width="76" height="68"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="12"/>
+                                                <state key="normal" title="50" backgroundImage="Answer Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="button2Touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jGL-BE-p6V"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="nzl-Q2-fFL">
+                                        <rect key="frame" x="0.0" y="183" width="202" height="68"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O41-uQ-xmm">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="68"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="12"/>
+                                                <state key="normal" title="60" backgroundImage="Answer Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouch3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nlw-hz-Ia5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0S-Vw-ynp">
+                                                <rect key="frame" x="126" y="0.0" width="76" height="68"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="12"/>
+                                                <state key="normal" title="54" backgroundImage="Answer Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTouch4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ifg-IP-EtP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wAi-vd-QRC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Efd-HM-3WN" secondAttribute="bottom" constant="29" id="28J-kc-Acf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="E8i-5j-XsV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8cn-8Z-3GO"/>
+                            <constraint firstItem="E8i-5j-XsV" firstAttribute="top" secondItem="oyX-ni-Bcj" secondAttribute="bottom" constant="35" id="OH0-B9-Vbg"/>
+                            <constraint firstItem="F49-9i-0Ye" firstAttribute="top" relation="greaterThanOrEqual" secondItem="E8i-5j-XsV" secondAttribute="bottom" constant="4" id="PLa-0x-6QL"/>
+                            <constraint firstItem="F49-9i-0Ye" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pob-Lc-i9F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F49-9i-0Ye" secondAttribute="trailing" constant="50" id="Qm9-Fz-cFO"/>
+                            <constraint firstItem="oyX-ni-Bcj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XYI-rA-YDL"/>
+                            <constraint firstItem="oGM-ks-tdE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ea5-79-Gg7"/>
+                            <constraint firstItem="oGM-ks-tdE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="emh-qS-PyV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F49-9i-0Ye" secondAttribute="bottom" constant="20" id="hWn-dx-V3s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E8i-5j-XsV" secondAttribute="trailing" id="lkm-pj-0TP"/>
+                            <constraint firstItem="F49-9i-0Ye" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="rP4-fC-Nii"/>
+                            <constraint firstItem="oyX-ni-Bcj" firstAttribute="top" secondItem="oGM-ks-tdE" secondAttribute="bottom" constant="20" id="xMl-FN-JhC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="ZrG-j8-EuS" id="Lif-nq-8go"/>
+                        <outlet property="button2" destination="46C-Rh-Csm" id="tZw-UY-i7I"/>
+                        <outlet property="button3" destination="O41-uQ-xmm" id="RQ2-F0-C87"/>
+                        <outlet property="button4" destination="U0S-Vw-ynp" id="eGP-kb-cvd"/>
+                        <outlet property="highScore" destination="oGM-ks-tdE" id="kVG-gy-anS"/>
+                        <outlet property="progressView" destination="E8i-5j-XsV" id="2P4-2l-1M2"/>
+                        <outlet property="question" destination="Efd-HM-3WN" id="YTi-XN-Krg"/>
+                        <outlet property="score" destination="oyX-ni-Bcj" id="EOr-qX-Lty"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.43478260869566" y="137.27678571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Answer Button" width="76" height="68"/>
+    </resources>
+</document>
