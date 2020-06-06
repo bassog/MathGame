@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     var ques: Questions?
     var timer = Timer()
-    var timeLimit:Float = 1
+    var timeLimit:Float = 2
     var time:Float = 0
     var currentProgress:Float = 0
     var correctTimeSave: Float = 0.1

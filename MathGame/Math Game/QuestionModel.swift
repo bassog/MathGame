@@ -19,8 +19,8 @@ class QuestionGenerator {
         var wrongAnswer = [Int]()
                 
         // Generator random for the Question
-        let randomNumber1 = Int.random(in: 3...12)
-        let randomNumber2 = Int.random(in: 3...12)
+        let randomNumber1 = Int.random(in: 3...15)
+        let randomNumber2 = Int.random(in: 3...15)
                
         //create our Question and correct answer
         ques.question = "\(randomNumber1) X \(randomNumber2)"
